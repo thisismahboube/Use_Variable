@@ -1,0 +1,11 @@
+#this file is located in /etc/ansible/my_project
+#my_worker is name of my ubuntu node
+- name: Read variable from external file
+  host: my-worker
+  var_files:
+    - vars.yml
+  tasks:
+    - name: Print a variable from the file
+      debug:
+        msg: "The value of my_var {{my_var}}"
+    
