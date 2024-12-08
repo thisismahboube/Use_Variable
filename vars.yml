@@ -1,0 +1,2 @@
+#this file is located in /etc/ansible/my_project
+my_var: "Hello, World!"
