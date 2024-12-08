@@ -1,0 +1,2 @@
+# finally you need to execute your playbook
+ansible-playbook read_variable.yml
