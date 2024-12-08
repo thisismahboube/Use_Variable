@@ -1,0 +1,11 @@
+# this file is in /etc/ansible/
+# here my ssh port is 6820
+[my-worker]
+192.168.28.5:6820
+
+[my-worker:vars]
+ansible_become=true
+ansible_become_method=sudo
+ansible_become_user=root
+ansible_become_ask_pass=false
+ansible_become_password='your pass'
